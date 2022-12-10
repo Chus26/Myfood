@@ -1,0 +1,47 @@
+/*tablet*/
+@media (max-width:850px){/* trong responsive cai nao trc thi uu tien*/
+    .menu-items{
+        width:21.5%;
+
+    }
+    #about{
+        margin: 0 40px;
+
+    }
+    #menu{
+        margin: 0 40px;
+    }
+    .about-img{
+        width:96%;
+    }
+}
+/*mobile*/
+@media (max-width:600px){
+    .menu-container{
+        padding:20px;
+    }
+    /*.menu-container{
+        width:97%
+    } cach 2*/
+    
+    .menu-items{
+        width:100%;
+    }
+    .about-img{
+        width:98%;
+
+    }
+    .about-container{
+        
+    }
+   
+    .footer-container{
+        flex-direction: column;
+    }
+    #about{
+        margin:0 16px;
+    }
+    #menu{
+        margin: 0 16px;
+    }
+}

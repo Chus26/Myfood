@@ -1,0 +1,239 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Karma', serif;
+    scroll-behavior: smooth;
+}
+
+#main{
+
+}
+header{
+    margin-bottom: 50px;
+}
+
+#nav-bar{
+    display: flex;
+    /* justify-content: space-around; */
+    height: 68px;
+    max-width: 1200px;
+    justify-content: space-between;/* can chua khoang trong*/
+    align-items: center;/* can tren xuong duoi*/
+    font-size: 24px;
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin:0 auto;
+}
+#nav-bar .toogle{
+    background-color: #ffffff;
+    padding:16px 15px 17px;
+
+}
+#nav-bar .toogle:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*Menu*/
+#menu{
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 75px;
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 21px;
+    row-gap: 51px;
+    padding: 20px 0px 20px 28px;
+    margin-bottom: 30px;
+
+
+}
+.menu-items{
+    width: 23%;
+}
+.menu-img{
+    width:100%;
+    display: inline-block;
+}
+.menu-items h3{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    margin:5px;
+    font-weight: 450;
+    line-height: 1.5;
+}
+
+
+.menu-items p{
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*panigatin*/
+.panigation{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.panigation a{
+    text-decoration: none;
+    padding: 8px 16px;
+    color:#000000;
+    transition: all 0.4s ease-in;
+}
+.panigation .active{
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.4s ease-in;
+
+}
+.panigation .active:hover{
+    background-color: #ccc;
+    color:#000000;
+}
+.panigation a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+#about{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    margin-bottom: 78px;
+    
+}
+.about-container{
+    padding:16px;
+}
+.about-img{
+    margin:36px auto;
+}
+.about-container h4{
+    font-size: 20px;
+}
+.about-container p{
+    margin:24px;
+    margin-bottom: 96px;
+}
+/*FOOTER*/
+#footer{
+    max-width: 1200px;
+    margin:0 auto;
+
+}
+.footer-container{
+    display: flex;
+    padding: 16px;
+    
+
+}
+.footer-items{
+    flex:1;
+    margin:20px;
+
+}
+.footer-items .sub-container:hover{/*neu muon lam y chu ban goc thi them padding hoac bo margin la dc*/
+    background-color:#ccc;
+    padding:10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+.footer-items h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-items p{
+    margin-bottom: 10px;
+
+}
+.footer-container .sub-container{
+    display:flex;/*chu lorem len hang ngang*/
+    margin-left: 10px;
+    margin-bottom:10px;
+
+    
+}
+.footer-container .sub-container img{
+    width:50px;
+    margin-right:15px;
+
+}
+.footer-items .sub-container.border-items{/* 2 the cung 1 class phai sat nhau*/
+    border-bottom:1px solid #ccc;
+    margin-bottom:15px;
+}
+.sub-container h4{
+    font-weight: 500;
+    font-size: 18px;
+}
+.sub-container p{
+    font-size: 16px;
+}
+/*span*/
+.span-container > div > span{
+    background-color: #616161;
+    color:#ffffff;
+    font-size: 12px;
+    padding:2px 6px;
+    margin-top: 10px;
+    display: inline-block;/*the span di vs inline-block*/
+
+}
+.span-container .active2{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px 6px;
+}
+.footer-items .span-container > div{
+    margin-bottom: 16px;
+}
+/*side-bar*/
+.side-bar {
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index:3;
+    background-color:#ffffff;
+    height:100%;
+    width:40%;
+    min-width:300px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+    display:none;
+}
+.side-bar .sidebar-items{
+    display: inline-block;
+    width:100%;/* cac the xuong dong vi chiem 100% the cha*/
+    text-decoration: none;
+     padding:20px;
+     background-color: #ffffff;
+     color:#000000;
+     font-size: 24px;
+    
+
+}
+.side-bar.active{
+    display: block;
+}
+.side-bar .sidebar-items:hover{
+    background-color: #ccc;
+
+}
+    
+
+
